@@ -1,0 +1,266 @@
+body {
+  background: url("https://images.wallpapersden.com/image/download/atlantis-nebula_bG1pbWiUmZqaraWkpJRqZmdlrWdtbWU.jpg") no-repeat center fixed;
+  background-color: #10564f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+/* MENU BAR Add a black background color to the top navigation */
+.topnav {
+  background-color: #003060;
+  overflow: auto;
+}
+
+/* MENU BAR Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: justify;
+  padding: 14px 16px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* MENU BAR Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: #00203f;
+}
+
+/* MENU BAR Add a color to the active/current link */
+.topnav a.active {
+  background-color: #d6eeee;
+  color: black;
+}
+
+/* TITLE */
+h1 {
+  color:#055c9d;
+  text-align: center;
+  background-color: #d6eeee;
+  border-style:dashed;
+  border-color:#475993;
+}
+
+
+/* BULLET LIST */
+ol.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
+/* TABLE*/
+table, th, td {
+  border:1px solid black;
+}
+
+
+/* KOTAK kontent */
+div.content {
+  background-color: #93dbf4; 
+  border: 2px solid white;
+  float: center;
+}
+
+
+div.big  {
+  float:left;
+  margin-left: 25px;  
+  position: relative;
+}
+
+img.bear  {
+  float:left;
+  margin-left: 100px;
+  margin-top:70px;
+  width:20%;
+  border: 5px dotted;
+  border-radius:50%;
+  position: relative;
+}
+
+/* KOTAK jam color*/
+div.box {
+  float:left;
+  margin-left:auto;
+  margin-right:auto;
+  margin-left: 20px;
+  position: relative;
+  background-color: #93dbf4; 
+  border: 2px solid white;
+}
+/* left column */
+div.left {
+  border: 2px solid white;
+  position: relative;
+  width: 240px;
+  height: 200px;
+  background-color: #93dbf4;
+  padding: 5px;
+  margin-left:20px;
+}
+
+/* TEXXXXXXXXXXXXTTTTTTTTTTTTTT */
+p.dua {
+  text-indent: 100px;
+}
+.om  {
+  background-color: rgb(8,3,64);
+  height: 100px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+tr:hover {background-color: 
+#2e8bc0;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 41, 91);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position:absolute
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4a86ed;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+div.tu {
+  text-align: center;
+} 
+
+div.bio {
+   padding: 10px; 
+   border: 2px solid blue; 
+   text-align:justify; 
+   background-color:white;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.GFG {
+            width: 200px;
+            margin-right: 70px;
+            border-radius: 80%;
+            border: 4px solid white;
+	    align:center;
+        }
+          
+.GFG:hover {
+            color: #111;
+            background: greenyellow;
+            box-shadow: 0 0 100px greenyellow;
+}
+
+ .glow {
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                       0 0 50px #f1f3f4, 0 0 60px #f1f3f4, 0 0 70px #f1f3f4;
+        }
+        to {
+          text-shadow: 0 0 20px #f1f3f4, 0 0 30px #f1f3f4, 0 0 40px #f1f3f4, 0 0 50px #ff4da6,
+                       0 0 60px #f1f3f4, 0 0 70px #f1f3f4, 0 0 80px #f1f3f4;
+        }
+      }
+ 
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 4%;
+  margin-right:20px;
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,251 @@
+<html>
+<head>
+
+<link href="asset/css/ass1.css" rel="stylesheet">
+<link rel="icon" href="asset/image/footer.png" type="image/gif" sizes="16x16"
+
+</head>
+
+<a name="anchor">  </a> 
+<title>HASSAN WEB DESIGN</title>
+<body>
+
+<div class="topnav">
+  <b><a class="active" href="Home.html">Home</a></b>
+  <a href="biodata2.html">Biodata</a>
+  <a href="education.html">Education</a>
+  <a href="family.html">Family</a>
+  <a href="experience.html">Experience</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="video.html">Video</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<br>
+<!------------BIGGGGGG KIRI---------------!>
+
+<div class="big">
+
+<!-------------CLOCKKKKKK---------------!>
+<center>
+
+<div class="left" style="width: 250px; height: 280px">
+
+     <canvas id="canvas" width="200" height="200" style="margin-top:20px; float:center">
+
+
+</canvas><script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+<b><p style="color:white; font-family:Times New Roman; font-size:30; margin-top:10px; letter-spacing:2px; background-color: #055c9d">TIME</p></b>
+<center>
+</div>
+<br>
+
+<!-----SWAY--------!>
+<div class="left">
+<img src="asset/image/sway.gif" width="200">
+<b><p style="color:white; font-family:Times New Roman; font-size:30; margin-top:10px; letter-spacing:2px; background-color: #055c9d">SHIUUUU...</p></b>
+</div>
+</div>
+
+<!-------------MAIN CONTENT---------------!>
+
+
+<center>
+
+<div class="box" style="width:50%; background-color: #93dbf4; border: 2px solid white">
+  <h1>BIODATA</h1>
+
+
+  <img src="asset/image/saya2.jpeg" width="150" border="3px" style="border-style:double dashed">
+
+
+  <p style="padding: 10px; border: 4px solid #145da0; width:30%; 
+            background-color:white; font-family: Arial"><b>About Me</b>
+  </p>
+
+<table style="width:80%">
+
+     <tr>
+        <td><font color="blue">
+               Full Name</td></font><td>Muhammad Hassanuddin Bin Khalid
+        </td>
+     </tr>
+
+     <tr>
+	 <td><font color="blue">Age</td></font><td> 20 years old</td>
+     </tr>
+
+     <tr>
+	 <td><font color="blue">Date of Birth</td></font/><td> 9<sup>th</sup> November 2002</td>
+    </tr>
+
+
+     <tr>
+	 <td><font color="blue">Place of Birth</font></td><td> Hospital Alor Setar</td>
+     </tr>
+
+    <tr>
+	 <td><font color="blue">Address</font></td><td> No. 159 Taman Beringin Fasa 3 Jalan 
+                                Beringin 15, Changloon, Kedah</td>
+    </tr>
+
+    <tr>
+	<td><font color="blue">Hobby</font></td><td> I like to surf the internet and 
+                                     sometimes I would draw things.</td>
+    </tr>
+ 
+    <tr>
+	<td><font color="blue">Skills</font></td><td> I can use editing software like Adobe 
+                                    Photoshop, Illustrator and Capcut to 
+                                    some extent.</td>
+    </tr>
+
+  <tr>
+	<td><font color="blue">Ambition
+  </font></td>
+          <td>
+          I want to be a successful businessman that make a lot money so 
+          I can live happily with my family and able to 
+          help others in need.</td>
+  </tr>
+
+  <tr>
+	<td><font color="blue">Favourite foods<font/></td>
+	<td><font color="black">Fried Rice, Fried Chicken, Apple, Oranges </font></td>
+  </tr>
+
+
+  <tr>
+	<td><font color="blue">Favourite Drinks</font></td>
+	<td><font color="black">Fresh Iced Orange Juice</td>
+  </tr>
+</p>
+</table>
+<br><br>
+<br>
+</div>
+
+
+
+<!--------------AUDIOOOOO--------------!>
+
+<div class="box" style="width:250; height:180">
+  <center>
+  <img src="asset/image/music2.png" style="width:200; padding: 5px">
+<br>
+    <audio controls style="width: 220px">
+  <source src="asset/audio/toktok.mp3" type="audio/mpeg">
+</audio>
+  </div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+<!-----RESPONSIBILITY----------!>
+<div class="box" style="width: 250px; padding: 5px; text-align:left">
+<center><font color="black"><b><p>Statement of Responsibility</p></b></center>
+<ul>
+  <li><font color="blue">Prepared By</font>: Muhammad Hassanuddin Bin Khalid</li>
+  <li><font color="blue">Matrix Number</font>: 2020861096</li>
+  <li><font color="blue">Class</font>: KIM1105A</li>
+  <li><font color="blue">IMD311</font>: Introduction to Web Content Management and Design</li>
+  <li><font color="blue">Individual Project</font>: Personal Website</li>
+  <li><font color="blue">Prepared for</font>: Airul Shazwan Bin Norshamimi</li>
+</ul>
+</font>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <a href="#anchor"> <img class="fixed" src="asset/image/Up.png"></a>
+<center> <div class="om"><br><p><font color="white">Copyright © 2022 Muhammad Hassanuddin Bin Khalid.All right reserved<br> Thank you for visiting! </font></p></div>
+</center>
+
+</body>
+</html>
